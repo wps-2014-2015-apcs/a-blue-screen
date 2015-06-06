@@ -2,18 +2,22 @@
  * @author Sarah Luettgen
  */
 
-public abstract class Resource {
+public class Resource {
+	
 	//Fields
 	private int number;
+	private String name;
 	
 	//Constructors
-	public Resource()
+	public Resource(String name)
 	{
+		this.name = name;
 		number = 0;
 	}
 	
-	public Resource(int number)
+	public Resource(String name, int number)
 	{
+		this.name = name;
 		this.number = number;
 	}
 	
@@ -29,5 +33,8 @@ public abstract class Resource {
 		number = num;
 	}
 	
-	public abstract String toString();
+	public String toString()
+	{
+		return "" + name + "(s): " + number;
+	}
 }
