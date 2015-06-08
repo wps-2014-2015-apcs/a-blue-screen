@@ -24,7 +24,7 @@ public class Verbs extends Resource {
 	 
 	}
 	
-	//hihihihihihi
+	//hi
 	
 	
 }
