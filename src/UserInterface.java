@@ -1,7 +1,18 @@
 /*
- * Author: Qiuyue Liu
- * */
-
+ * 2014 - 2015 APCS A Blue Screen project.
+ * 
+ * @author Lucy Dong
+ * @author Lukas Goodman
+ * @author Jefferson Kim
+ * @author Qiuyue Liu
+ * @author Sarah Luettgen
+ * @author Billy Miller
+ * @author Michael Moran
+ * @author William Qi
+ * @author Kristine Xu
+ * @author Jeremy Yu
+ * 
+ */
 import javax.swing.JFrame;
 
 
