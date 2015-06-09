@@ -19,4 +19,16 @@
  */
 public class Storyline {
 
+/*
+ * Setting: 
+ * 
+ * “An Uncomfortably Cold Classroom” 
+ * “A Bedroom” 
+ * “Office Supply Store” 
+ * “Starbucks”
+ * "Friend's House"
+ * 
+ * 
+ */
+
 }
