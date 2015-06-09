@@ -1,8 +1,19 @@
-/*\
-|*|
-|*|@author Michael, Billy, Will
-|*|
-\*/
+/*
+ * 2014 - 2015 APCS A Blue Screen project.
+ * 
+ * @author Lucy Dong
+ * @author Lukas Goodman
+ * @author Jefferson Kim
+ * @author Qiuyue Liu
+ * @author Sarah Luettgen
+ * @author Billy Miller
+ * @author Michael Moran
+ * @author William Qi
+ * @author Kristine Xu
+ * @author Jeremy Yu
+ * 
+ */
+
 public class Map {
   public enum Move{FOWARD, BACKWARD, LEFT, RIGHT};
   public String[][] grid;
@@ -34,7 +45,7 @@ public class Map {
       for(String s : i){
         ans += i;
       }
-      ans += "\n"
+      ans += "\n";
     }
     return ans;
   }
