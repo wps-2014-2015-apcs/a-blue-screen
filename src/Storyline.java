@@ -1,5 +1,5 @@
 /*
- * 2014 - 2015 APCS A Blue Screen project.
+ * 2014-2015 APCS "A Blue Screen" Project
  * 
  * @author Lucy Dong
  * @author Lukas Goodman
@@ -10,10 +10,13 @@
  * @author Michael Moran
  * @author William Qi
  * @author Kristine Xu
+ * @author Ashley Yu
  * @author Jeremy Yu
  * 
+ *
+ * Outlines Story/Plot of the game
+ * Contains project text
  */
-
-public class Verbs {
+public class Storyline {
 
 }
