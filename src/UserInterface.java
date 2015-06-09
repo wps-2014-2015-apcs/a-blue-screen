@@ -14,16 +14,26 @@
  * @author Jeremy Yu
  * 
  */
-import javax.swing.JFrame;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 
-public class UserInterface {
-	public static void main(String[] args){
-		startGame();
-	}
-	public static void startGame(){
-		JFrame window = new JFrame("A Blue Screen");
-		window.setVisible(true);
-		window.setSize(500, 500);
-	}
+public class UserInterface extends JPanel
+  implements ActionListener
+{
+
+  public static void main(String[] a) {
+	    JFrame window = new JFrame("A Blue Screen");
+	    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    window.setBounds(0,0,1000,500);
+	    window.getContentPane().add(new MyCanvas());
+	    window.setVisible(true);
+	  }
+
+@Override
+public void actionPerformed(ActionEvent e) {
+	// TODO Auto-generated method stub
+	
+}
 }
