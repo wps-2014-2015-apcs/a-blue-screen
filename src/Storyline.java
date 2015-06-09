@@ -1,10 +1,16 @@
 /*
  * 2014-2015 APCS "A Blue Screen" Project
  * 
- * @author Lukas Goodman
- * @author Jeremy Yu
  * @author Lucy Dong
- * @author Jefferson Kim	
+ * @author Lukas Goodman
+ * @author Jefferson Kim
+ * @author Qiuyue Liu
+ * @author Sarah Luettgen
+ * @author Billy Miller
+ * @author Michael Moran
+ * @author William Qi
+ * @author Kristine Xu
+ * @author Jeremy Yu
  * 
  *
  * Outlines Story/Plot of the game
