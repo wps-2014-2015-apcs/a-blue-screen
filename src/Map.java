@@ -16,7 +16,6 @@
  */
 
 public class Map {
-  public enum Move{FOWARD, BACKWARD, LEFT, RIGHT};
   public String[][] grid;
 //public int[][] screen;
   public int playerX;
