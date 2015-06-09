@@ -16,5 +16,8 @@
  */
 
 public class Verbs {
-
+	public Verbs(String name)
+	{
+		
+	}
 }
