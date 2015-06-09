@@ -1,7 +1,6 @@
 /**@author Kristine and Ashley
  * Work in progress
 */ 
-
 public class Verbs extends Resource {
 	
 	public Verbs(String name)
@@ -24,7 +23,7 @@ public class Verbs extends Resource {
 	 
 	}
 	
-	//hi
+
 	
 	
 }
