@@ -40,15 +40,16 @@ public class UserInterface extends JPanel
 	    
 
 	    g.setColor(Color.WHITE);
-	    g.drawRect (800, 20, 150, 200); 
+	    g.drawRect (800, 20, 180, 200); 
 	    g.drawString("Resources", 840, 40);
-	    g.drawString("verbs.pencil.toString()", 810, 55); //will remove quotes when verbs is complete
-	    g.drawString("verbs.coffee.toString()", 810, 70);  //see above
+	    g.drawString(Verbs.pencils.toString(), 810, 55);
+	    g.drawString(Verbs.coffee.toString(), 810, 70);
+	    g.drawString(Verbs.computerCharge.toString(), 810, 85);
 	    
-	    g.drawRect (800, 230, 150, 190);
+	    g.drawRect (800, 230,180, 190);
 	    g.drawString("Stats", 860, 250);
-	    g.drawString("verbs.knowledge.toString()", 810, 265);  //see above
-	    g.drawString("verbs.grade.toString()", 810, 280);  //see above
+	    g.drawString(Verbs.health.toString(), 810, 265); 
+	    g.drawString(Verbs.grade.toString(), 810, 280); 
 	    
 	    g.drawRect (20, 20, 300, 400); 
 	    g.drawString("Story", 150, 40);
