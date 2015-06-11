@@ -12,13 +12,16 @@
  * @author Kristine Xu
  * @author Ashley Yu
  * @author Jeremy Yu
- * 
  */
 
 /**
  * The verbs of the project. 
  */
 public class Verbs extends Resource {
+	
+	//fields
+	Resource pencils = new Resource("pencils", 0);
+	
 	
 	public Verbs(String name)
 	{
