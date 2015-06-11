@@ -51,10 +51,15 @@ public class Verbs extends Resource {
 		{
 			System.out.print(notEnough); 
 		}
-		pencils.setNumber(getNumber() - 1);
+		else 
+		{
+			pencils.setNumber(getNumber() - 1);
+			grade.setNumber(getNumber() + 2);
+			System.out.print(finished); 
+		}
 	}
 	
-	//Pencils: +1
+	//Pencils: between +1 and +5
 	//Timer: available every 10 seconds
 	public void collectPencils()
 	{
