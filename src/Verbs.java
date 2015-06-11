@@ -12,7 +12,6 @@
  * @author Kristine Xu
  * @author Ashley Yu
  * @author Jeremy Yu
- * 
  */
 
 /**
