@@ -20,8 +20,10 @@
 public class Verbs extends Resource {
 	
 	//fields
-	Resource pencils = new Resource("pencils", 0);
-	
+	Resource pencils = new Resource("Pencils", 0);
+	Resource coffee = new Resource("Coffee", 0);
+	Resource grade = new Resource("Grade", 0);
+	Resource health = new Resource("Health", 0);
 	
 	public Verbs(String name)
 	{
