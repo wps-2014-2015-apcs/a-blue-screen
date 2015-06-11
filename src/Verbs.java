@@ -44,14 +44,21 @@ public class Verbs extends Resource {
 	    //Timer: available every 10 seconds 
 	public void doHomework()
 	{
-		
+		String finished = "Your assignment is finished."; 
+		String notEnough = "Not enough pencils.";
+		if (pencils.getNumber() == 0)
+		{
+			System.out.print(notEnough); 
+		}
+		pencils.setNumber(getNumber() - 1);
 	}
 	
 	//Pencils: +1
 	//Timer: available every 10 seconds
 	public void collectPencils()
 	{
-	 
+		int random = (int)(Math.random() * 5); 
+		pencils.setNumber(getNumber() + random);
 	}
 	
 }
