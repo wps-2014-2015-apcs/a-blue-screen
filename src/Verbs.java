@@ -20,10 +20,11 @@
 public class Verbs extends Resource {
 	
 	//fields
-	Resource pencils = new Resource("Pencils", 0);
-	Resource coffee = new Resource("Coffee", 0);
-	Resource grade = new Resource("Grade", 0);
-	Resource health = new Resource("Health", 0);
+	public static Resource pencils = new Resource("Pencils", 0);
+	public static Resource coffee = new Resource("Coffee", 0);
+	public static Resource grade = new Resource("Grade", 0);
+	public static Resource health = new Resource("Health", 0);
+	public static Resource computerCharge = new Resource("Computer charge", 75);
 	
 	//hi
 	
