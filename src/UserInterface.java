@@ -16,24 +16,50 @@
  */
 import java.awt.*;
 import java.awt.event.*;
+
 import javax.swing.*;
 
 
 public class UserInterface extends JPanel
   implements ActionListener
 {
+	  private int time;
+	  //TODO: add button to change to map view, add resources w/ numbers, add buttons for verbs
+	  
+	  public UserInterface() 
+	  {
+		    time = 0; //Timer should be used to produce pop-up events, reload resource collections
+		    Timer clock = new Timer(30, this); 
+		    clock.start();
+	  }
+	
+	  public void paintComponent(Graphics g)
+	  {
+	    setBackground(Color.BLUE);
+	    super.paintComponent(g);
 
-  public static void main(String[] a) {
+	    g.setColor(Color.WHITE);
+	    g.drawRect (800, 20, 150, 200); 
+	    g.drawString("Resources", 840, 40);
+	    
+	    g.drawRect (20, 20, 300, 400); 
+	    g.drawString("Story", 150, 40);
+	 
+	  }
+
+	  public static void main(String[] a) 
+	  {
 	    JFrame window = new JFrame("A Blue Screen");
 	    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    window.setBounds(0,0,1000,500);
-	    window.getContentPane().add(new MyCanvas());
+	    window.getContentPane().add(new UserInterface());
 	    window.setVisible(true);
 	  }
 
-@Override
-public void actionPerformed(ActionEvent e) {
-	// TODO Auto-generated method stub
-	
-}
+
+	  public void actionPerformed(ActionEvent e) 
+	  {
+		  time++;
+		  repaint();
+	  }
 }
