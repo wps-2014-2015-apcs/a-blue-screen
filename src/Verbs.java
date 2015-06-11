@@ -20,6 +20,10 @@
  */
 public class Verbs extends Resource {
 	
+	//fields
+	Resource pencils = new Resource("pencils", 0);
+	
+	
 	public Verbs(String name)
 	{
 		super(name);
