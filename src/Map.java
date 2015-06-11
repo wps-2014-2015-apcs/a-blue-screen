@@ -44,7 +44,7 @@ public class Map {
     String ans = "";
     for(String[] i : grid){
       for(String s : i){
-        ans += i;
+        ans += s;
       }
       ans += "\n";
     }
