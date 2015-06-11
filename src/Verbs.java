@@ -25,6 +25,8 @@ public class Verbs extends Resource {
 	Resource grade = new Resource("Grade", 0);
 	Resource health = new Resource("Health", 0);
 	
+	//hi
+	
 	public Verbs(String name)
 	{
 		super(name);
