@@ -16,7 +16,10 @@
  
 public class ABlueScreen {
     public static void main(String[] args) {
-        System.out.println(" ABlueScreen");
-        System.out.println("A Blue Screen");
+	    JFrame window = new JFrame("A Blue Screen");
+	    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    window.setBounds(0,0,1000,500);
+	    window.getContentPane().add(new UserInterface());
+	    window.setVisible(true);
     }
 }
