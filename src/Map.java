@@ -16,14 +16,13 @@
  */
 
 public class Map {
-  public enum Move{FOWARD, BACKWARD, LEFT, RIGHT};
   public String[][] grid;
 //public int[][] screen;
   public int playerX;
   public int playerY;
   
   public Map(){
-    grid = new String[63][63];
+    grid = new String[21][21];
     playerX = 32;
     playerY = 32;
   }
