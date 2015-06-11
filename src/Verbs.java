@@ -34,15 +34,17 @@ public class Verbs extends Resource {
 	//if you DO have pencils --> displays "Your assignment is finished"
 		//Grade: +2
 		//Pencils: -1
-	    //Timer: available every 10 seconds
+	    //Timer: available every 10 seconds 
 	public void doHomework()
 	{
 		
 	}
 	
+	//Pencils: +1
+	//Timer: available every 10 seconds
 	public void collectPencils()
 	{
 	 
 	}
-	//hihihihihi
+	
 }
