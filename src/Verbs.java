@@ -30,6 +30,11 @@ public class Verbs extends Resource {
 		super(name, number);
 	}
 	
+	//if "no more pencils" --> displays "Not enough pencils"
+	//if you DO have pencils --> displays "Your assignment is finished"
+		//Grade: +2
+		//Pencils: -1
+	    //Timer: available every 10 seconds
 	public void doHomework()
 	{
 		
