@@ -37,13 +37,22 @@ public class UserInterface extends JPanel
 	  {
 	    setBackground(Color.BLUE);
 	    super.paintComponent(g);
+	    
 
 	    g.setColor(Color.WHITE);
 	    g.drawRect (800, 20, 150, 200); 
 	    g.drawString("Resources", 840, 40);
+	    g.drawString("verbs.pencil.toString()", 810, 55); //will remove quotes when verbs is complete
+	    g.drawString("verbs.coffee.toString()", 810, 70);  //see above
+	    
+	    g.drawRect (800, 230, 150, 190);
+	    g.drawString("Stats", 860, 250);
+	    g.drawString("verbs.knowledge.toString()", 810, 265);  //see above
+	    g.drawString("verbs.grade.toString()", 810, 280);  //see above
 	    
 	    g.drawRect (20, 20, 300, 400); 
 	    g.drawString("Story", 150, 40);
+	    g.drawString("feild that contains first part of story", 30, 55);
 	 
 	  }
 
