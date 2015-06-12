@@ -19,7 +19,7 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-
+//To be deleted; obsolete
 public class UserInterface extends JPanel
   implements ActionListener
 {
