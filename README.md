@@ -1,5 +1,5 @@
 # a-blue-screen
-WPS 2014-2015 APCS 'dark room' project.
+WPS 2014-2015 APCS 'dark room' project. [need the google doc?](#links-to-docs)
 ##Problems
 Map.java code from 11June2015 has gone missing from
 [src](https://github.com/wps-2014-2015-apcs/a-blue-screen/tree/master/src)
