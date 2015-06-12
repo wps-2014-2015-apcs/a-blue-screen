@@ -22,11 +22,10 @@ public class Verbs extends Resource {
 	
 	//fields
 	public static Resource pencils = new Resource("Pencils", 0);
-	public static Resource grade = new Resource("Grade", 0);
-	public static Resource health = new Resource("Health", 0);
+	public static Resource grade = new Resource("Grade", 52);
+	public static Resource health = new Resource("Health", 50);
 	public static Resource computerCharge = new Resource("Computer charge", 75);
-	
-	//hi
+	public static Resource knowledge = new Resource("Knowledge", 0); 
 	
 	public Verbs(String name)
 	{
@@ -71,16 +70,40 @@ public class Verbs extends Resource {
 	//Health: increases 10%
 	public void drinkCoffee() 
 	{
-		health.setNumber(health.getNumber() + 10);
-		System.out.println("You are awake.");
+		if (health.getNumber() <= 90)
+		{
+			health.setNumber(health.getNumber() + 10);
+			System.out.println("You are awake.");
+		}
+		else if (health.getNumber() < 100 && health.getNumber() > 90)
+		{
+			health.setNumber(100); 
+			System.out.println("You are awake."); 
+		}
+		else 
+		{
+			System.out.println("You are awake."); 
+		}
 	}
 	
 	//Prompts text: "Health increase!"
 	//Health: increases 10%
 	public void playGame() 
 	{
-		health.setNumber(health.getNumber() + 10);
-		System.out.println("Health increase!");
+		if (health.getNumber() <= 90)
+		{
+			health.setNumber(health.getNumber() + 10);
+			System.out.println("Health increase!");
+		}
+		else if (health.getNumber() < 100 && health.getNumber() > 90)
+		{
+			health.setNumber(100); 
+			System.out.println("Health increase!"); 
+		}
+		else 
+		{
+			System.out.println("Health increase!"); 
+		}
 	}
 	
 	//Prompts text: "There is progress on your code."
@@ -96,11 +119,13 @@ public class Verbs extends Resource {
 	public void takeTest()
 	{
 		if (health.getNumber() == 100)
-			System.out.println("You failed."); 
+		{
+			System.out.println("You passed."); 
+			grade.setNumber(grade.getNumber() + 2);
+		}
 		else 
 		{
-			grade.setNumber(grade.getNumber() + 2);
-			System.out.println("You passed."); 
+			System.out.println("You failed."); 
 		}
 	}
 }
