@@ -97,10 +97,14 @@ public class Map {
   
   public void movePlayer(String d){
     d = d.toUpperCase();
+    int tempX = playerX;
+    int tempY = playerY;
     if (d == "FORWARD" || d == "UP") playerY--;
     if (d == "BACKWARD" || d == "DOWN") playerY++;
     if (d == "LEFT") playerX--;
     if (d == "RIGHT") playerX++;
+    grid[playerY][playerX] = "@";
+    grid[tempY][tempX] = gridNoCharacter[tempY][tempX];
   }
 
   public String toString(){
@@ -119,6 +123,11 @@ public class Map {
   public static void main(String[] args)
   {
 	  Map test = new Map();
+	  test.movePlayer("RIGHT");
+	  test.movePlayer("RIGHT");
+	  test.movePlayer("UP");
+	  test.movePlayer("RIGHT");
+	  test.movePlayer("RIGHT");
 	  System.out.println(test);
   }
 }
