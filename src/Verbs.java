@@ -24,7 +24,7 @@ public class Verbs extends Resource {
 	public static Resource grade = new Resource("Grade", 52);
 	public static Resource health = new Resource("Health", 50);
 	public static Resource computerCharge = new Resource("Computer charge", 75);
-	public static Resource knowledge = new Resource("Knowledge", 0); 
+	
 	
 	public Verbs(String name)
 	{
