@@ -53,8 +53,8 @@ public class Verbs extends Resource {
 		}
 		else 
 		{
-			pencils.setNumber(getNumber() - 1);
-			grade.setNumber(getNumber() + 2);
+			pencils.setNumber(pencils.getNumber() - 1);
+			grade.setNumber(grade.getNumber() + 2);
 			System.out.println(finished); 
 		}
 	}
@@ -64,7 +64,7 @@ public class Verbs extends Resource {
 	public void collectPencils()
 	{
 		int random = (int)(Math.random() * 5); 
-		pencils.setNumber(getNumber() + random);
+		pencils.setNumber(pencils.getNumber() + random);
 	}
 	
 	//Prompts text: "You are awake". 
