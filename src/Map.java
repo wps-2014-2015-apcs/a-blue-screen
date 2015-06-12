@@ -15,16 +15,80 @@
  * 
  */
 
+/**
+ * This is the map and the methods for moving around the map
+ *
+ */
 public class Map {
+  public enum Move{FOWARD, BACKWARD, LEFT, RIGHT};
   public String[][] grid;
+  public String[][] gridNoCharacter;
 //public int[][] screen;
   public int playerX;
   public int playerY;
   
   public Map(){
-    grid = new String[21][21];
-    playerX = 32;
-    playerY = 32;
+	 final int SIZE = 21;
+	 int middle = (SIZE - 1) / 2;
+	
+	playerX = middle;
+    playerY = middle;
+    grid = new String[SIZE][SIZE];
+    
+    for(int r = 0; r < SIZE; r++)
+    	for(int c = 0; c < SIZE; c++)
+    		grid[r][c] = "*";
+    
+    grid[middle][middle] = "@";
+    
+    int randRow;
+    int randCol;
+    for(int i = 0; i < 5; i++)// 5 Friends Houses
+    {
+    	randRow = (int)(Math.random() * SIZE);
+    	randCol = (int)(Math.random() * SIZE);
+    	if(grid[randRow][randCol].equals("*"))
+    		grid[randRow][randCol] = "H";
+    	else
+    		i--;
+    }
+    
+    for(int i = 0; i < 5; i++)// 5 Coffee Shops
+    {
+    	randRow = (int)(Math.random() * SIZE);
+    	randCol = (int)(Math.random() * SIZE);
+    	if(grid[randRow][randCol].equals("*"))
+    		grid[randRow][randCol] = "C";
+    	else
+    		i--;
+    }
+    
+    for(int i = 0; i < 5; i++)// 5 Office supply Stores
+    {
+    	randRow = (int)(Math.random() * SIZE);
+    	randCol = (int)(Math.random() * SIZE);
+    	if(grid[randRow][randCol].equals("*"))
+    		grid[randRow][randCol] = "O";
+    	else
+    		i--;
+    }
+    
+    for(int i = 0; i < 1; i++)// 1 School
+    {
+    	randRow = (int)(Math.random() * SIZE);
+    	randCol = (int)(Math.random() * SIZE);
+    	if(grid[randRow][randCol].equals("*"))
+    		grid[randRow][randCol] = "S";
+    	else
+    		i--;
+    }
+    
+    gridNoCharacter = new String[SIZE][SIZE];
+    for(int r = 0; r < SIZE; r++)
+    	for(int c = 0; c < SIZE; c++)
+    		gridNoCharacter[r][c] = grid[r][c];
+    gridNoCharacter[middle][middle] = "A";
+    
   }
   
   public String[][]getData(){return grid;}
@@ -38,15 +102,24 @@ public class Map {
     if (d == "LEFT") playerX--;
     if (d == "RIGHT") playerX++;
   }
-  
+
   public String toString(){
     String ans = "";
-    for(String[] i : grid){
-      for(String s : i){
-        ans += s;
-      }
-      ans += "\n";
+    for(int r = 0; r < grid.length; r++)
+    {
+    	for(int c = 0; c < grid[r].length; c++)
+    	{
+    		ans += grid[r][c] + " ";
+    	}
+    	ans += "\n";
     }
     return ans;
   }
+  
+  public static void main(String[] args)
+  {
+	  Map test = new Map();
+	  System.out.println(test);
+  }
 }
+
