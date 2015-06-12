@@ -1,6 +1,44 @@
 # a-blue-screen
 WPS 2014-2015 APCS 'dark room' project.
+###Authors:
+[Michael Moran](mailto:haelmic3@gmail.com)
+		
+		
+[Sarah Luettgen](mailto:sarah.luettgen@gmail.com)
+		
+		
+[Kristine Xu](mailto:xu.cupcake.kristine@gmail.com)
+		
+		
+[Billy Miller](mailto:wbrm77@gmail.com)
+		
+		
+[Ashley Yu](mailto:ash.yu08@gmail.com)
+		
+		
+[Qiuyue Liu](mailto:qiuyueliu97@gmail.com)
+		
+		
+[Jefferson Kim](mailto:jeffersonkim97@gmail.com)
+		
+		
+[David Petty](mailto:dpetty@winchesterps.org)
+		
+		
+[William Qi](mailto:will.qi98@gmail.com)
+		
+		
+<!--[1605035@wpsstudent.com](mailto:1605035@wpsstudent.com)
 
+
+		-->
+[Lucy Dong](mailto:lucydong22@gmail.com)
+		
+		
+[Jeremy Yu](mailto:farmeryu@gmail.com)
+		
+		
+[Lukas Goodman](mailto:lukasrossgoodman@gmail.com)
 ##Links
 
 ###Links to docs:
