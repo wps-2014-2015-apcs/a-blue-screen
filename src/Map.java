@@ -32,7 +32,7 @@ public class Map {
     playerX = m; playerY = m;
     grid = new String[SIZE][SIZE];
     for(int r = 0; r < SIZE; r++) for(int c = 0; c < SIZE; c++) grid[r][c] = "*";
-    grid[middle][middle] = "@";
+    grid[m][m] = "@";
     int randRow;
     int randCol;
     for(int i = 0; i < 5; i++)// 5 Friends Houses
@@ -65,7 +65,7 @@ public class Map {
     }
     gridNoCharacter = new String[SIZE][SIZE];
     for(int r = 0; r < SIZE; r++) for(int c = 0; c < SIZE; c++) gridNoCharacter[r][c] = grid[r][c];
-    gridNoCharacter[middle][middle] = "A";
+    gridNoCharacter[m][m] = "A";
   }//Map() constructor end
   
   public String[][]getData(){return grid;}
@@ -80,7 +80,7 @@ public class Map {
     if (d == "BACKWARD" || d == "DOWN") playerY++;
     if (d == "LEFT") playerX--;
     if (d == "RIGHT") playerX++;
-    if (d != "FORWARD" || d != "UP" || d != "BACKWARD" || d != "DOWN" || d != "LEFT" || d != "RIGHT")
+    if (d != "FORWARD" && d != "UP" && d != "BACKWARD" && d != "DOWN" && d != "LEFT" && d != "RIGHT")
       throw new Error(d+" is not a direction");
     grid[playerY][playerX] = "@";
     grid[tempY][tempX] = gridNoCharacter[tempY][tempX];
@@ -89,7 +89,7 @@ public class Map {
   public String toString(){
     String ans = "";
     for(String[]i : grid){
-      for(String s : i) ans += s;
+      for(String s : i) ans +=" " + s + " ";
       ans += "\n";
     }
     return ans;
