@@ -3,44 +3,41 @@ WPS 2014-2015 APCS 'dark room' project. [need the google docs?](#links-to-docs)
 ##Problems
 #####No [wiki](https://github.com/wps-2014-2015-apcs/a-blue-screen/wiki) will YOU make one?
 ##Authors
-[Michael Moran](mailto:haelmic3@gmail.com)
+######[Michael Moran](mailto:haelmic3@gmail.com)
 		
 		
-[Sarah Luettgen](mailto:sarah.luettgen@gmail.com)
+######[Kristine Xu](mailto:xu.cupcake.kristine@gmail.com)
 		
 		
-[Kristine Xu](mailto:xu.cupcake.kristine@gmail.com)
+######[Jeremy Yu](mailto:farmeryu@gmail.com)
 		
 		
-[Billy Miller](mailto:wbrm77@gmail.com)
+######[Sarah Luettgen](mailto:sarah.luettgen@gmail.com)
 		
 		
-[Ashley Yu](mailto:ash.yu08@gmail.com)
+######[Ashley Yu](mailto:ash.yu08@gmail.com)
 		
 		
-[Qiuyue Liu](mailto:qiuyueliu97@gmail.com)
+######[David Petty](mailto:dpetty@winchesterps.org)
 		
 		
-[Jefferson Kim](mailto:jeffersonkim97@gmail.com)
+######[Billy Miller](mailto:wbrm77@gmail.com)
 		
 		
-[David Petty](mailto:dpetty@winchesterps.org)
+######[Qiuyue Liu](mailto:qiuyueliu97@gmail.com)
 		
 		
-[William Qi](mailto:will.qi98@gmail.com)
+######[Lucy Dong](mailto:lucydong22@gmail.com)
+		
+			
+######[Jefferson Kim](mailto:jeffersonkim97@gmail.com)
 		
 		
-<!--[1605035@wpsstudent.com](mailto:1605035@wpsstudent.com)
-
-
-		-->
-[Lucy Dong](mailto:lucydong22@gmail.com)
+######[William Qi](mailto:will.qi98@gmail.com)
 		
 		
-[Jeremy Yu](mailto:farmeryu@gmail.com)
-		
-		
-[Lukas Goodman](mailto:lukasrossgoodman@gmail.com)
+######[Lukas Goodman](mailto:lukasrossgoodman@gmail.com)
+<!--[1605035@wpsstudent.com](mailto:1605035@wpsstudent.com)-->
 ##Links
 
 ###Links to docs:
