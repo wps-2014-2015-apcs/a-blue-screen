@@ -27,6 +27,9 @@ WPS 2014-2015 APCS 'dark room' project. [need the google docs?](#links-to-docs)
 #####[Qiuyue Liu](mailto:qiuyueliu97@gmail.com)
 		
 		
+#####[Lukas Goodman](mailto:lukasrossgoodman@gmail.com)
+		
+		
 [Lucy Dong](mailto:lucydong22@gmail.com)
 		
 			
@@ -34,9 +37,6 @@ WPS 2014-2015 APCS 'dark room' project. [need the google docs?](#links-to-docs)
 		
 		
 [William Qi](mailto:will.qi98@gmail.com)
-		
-		
-[Lukas Goodman](mailto:lukasrossgoodman@gmail.com)
 <!--[1605035@wpsstudent.com](mailto:1605035@wpsstudent.com)-->
 ##Links
 
