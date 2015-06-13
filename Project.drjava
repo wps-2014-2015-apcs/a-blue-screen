@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <drjava version="drjava-20140826-r5761">
-  <project autorefresh="false" build="a-blue-screen/bin/" main="ABlueScreen" root="a-blue-screen/src/" work="a-blue-screen/">
+  <project autorefresh="false" build="bin/" main="ABlueScreen" root="src/" work="">
     <createjar file=""/>
     <source>
-      <file active="true" name="Resource.java" package="" timestamp="11-Jun-2015 11:51:00">
-        <select from="47" to="47"/>
+      <file active="true" name="ABlueScreen.java" package="" timestamp="12-Jun-2015 19:51:21">
+        <select from="0" to="0"/>
         <scroll column="0" row="0"/>
       </file>
       <file name="Map.java" package="" timestamp="12-Jun-2015 19:47:36">
-        <select from="47" to="47"/>
+        <select from="0" to="0"/>
         <scroll column="0" row="0"/>
       </file>
-      <file name="ABlueScreen.java" package="" timestamp="12-Jun-2015 19:51:21">
-        <select from="47" to="47"/>
-        <scroll column="0" row="0"/>
-      </file>
-      <file name="UserInterface.java" package="" timestamp="12-Jun-2015 19:39:18">
-        <select from="47" to="47"/>
+      <file name="Resource.java" package="" timestamp="11-Jun-2015 11:51:00">
+        <select from="0" to="0"/>
         <scroll column="0" row="0"/>
       </file>
       <file name="Storyline.java" package="" timestamp="11-Jun-2015 11:51:00">
-        <select from="47" to="47"/>
+        <select from="0" to="0"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="UserInterface.java" package="" timestamp="12-Jun-2015 19:39:18">
+        <select from="0" to="0"/>
         <scroll column="0" row="0"/>
       </file>
       <file name="Verbs.java" package="" timestamp="12-Jun-2015 19:53:11">
-        <select from="47" to="47"/>
+        <select from="0" to="0"/>
         <scroll column="0" row="0"/>
       </file>
     </source>
