@@ -33,6 +33,7 @@ public class Map {
     {"?","?","?","?","?"}
   };
   private boolean spaces = true;
+  private int attackCount = -3;
   
 //constructors
   public Map(){
@@ -94,6 +95,34 @@ public class Map {
     return ans;
   }
   
+//Random attacks and fighting
+  public void supriseAttack()
+  {
+	  if(attackCount <= 0);
+	  else
+	  {
+		  int randNum = (int)(Math.random() * 5);
+		  if(randNum == 1)
+		  {
+			 fight();
+			 attackCount = -3;
+		  }
+		  else;
+	  }
+  }
+  
+  public static void fight()
+  {
+	  int randNum = (int)(Math.random() * 5);
+	  if(randNum == 0){}
+	  else
+	  {
+		  Verbs.health.setNumber(Verbs.health.getNumber() - 20);
+	  }
+  }
+  
+
+  
 //print methods
   public String toString(){
     String ans = "";
@@ -125,5 +154,7 @@ public class Map {
     test.movePlayer("LEFT");  System.out.println(test);
     test.movePlayer("LEFT");  System.out.println(test);
     test.movePlayer("DOWN");  System.out.println(test);
+    Map test2 = new Map();
+    System.out.println(test2);
   }
 }
