@@ -19,7 +19,6 @@
  * The verbs of the project. 
  */
 public class Verbs extends Resource {
- 
  //fields
  public static Resource pencils = new Resource("Pencils", 0);
  public static Resource coffee = new Resource("Coffee", 0);
@@ -50,6 +49,17 @@ public class Verbs extends Resource {
   if (pencils.getNumber() == 0)
   {
    System.out.println(notEnough); 
+  }
+  else if (grade.getNumber() == 100)
+  {
+   pencils.setNumber(pencils.getNumber() - 1);
+   System.out.println(finished); 
+  }
+  else if (grade.getNumber() == 99)
+  {
+   pencils.setNumber(pencils.getNumber() - 1);
+   grade.setNumber(100);
+   System.out.println(finished); 
   }
   else 
   {
@@ -111,8 +121,20 @@ public class Verbs extends Resource {
  //Grade: +2
  public void writeCode()
  {
-  grade.setNumber(grade.getNumber() + 2); 
-  System.out.println("There is progress on your code."); 
+  if (grade.getNumber() == 100)
+  {
+	System.out.println("There is progress on your code.");   
+  }
+  else if (grade.getNumber() == 99)
+  {
+	grade.setNumber(100); 
+	System.out.println("There is progress on your code."); 
+  }
+  else 
+  {
+    grade.setNumber(grade.getNumber() + 2); 
+    System.out.println("There is progress on your code."); 
+  }
  }
  
  //If you don't have health at 100% you fail
@@ -121,8 +143,20 @@ public class Verbs extends Resource {
  {
   if (health.getNumber() == 100)
   {
-   System.out.println("You passed."); 
-   grade.setNumber(grade.getNumber() + 2);
+    if (grade.getNumber() == 100)
+    {
+      System.out.println("You passed."); 
+    }
+    else if (grade.getNumber() == 99)
+    {
+      System.out.println("You passed."); 
+      grade.setNumber(100);
+    }
+    else 
+    {
+      System.out.println("You passed."); 
+      grade.setNumber(grade.getNumber() + 2);
+    }
   }
   else 
   {
