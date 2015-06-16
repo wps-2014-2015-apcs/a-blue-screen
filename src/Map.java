@@ -48,7 +48,7 @@ public class Map {
     build("O", 5);// 5 Office supply Stores
     build("E", 1);// 1 School
     grid[m][m] = "A";
-  }//Map() constructor end
+  }
   public Map(String[][] grid){
     final int SIZE = grid.length;
     int m = SIZE/2;
@@ -74,9 +74,16 @@ public class Map {
   }
   
 //public get methods
-  public String[][]getData(){return grid;}
+  public String[][]getData(){
+    String[][]ans = new String[grid.length][grid[0].length];
+    System.arraycopy(grid,0,ans,0,grid.length);
+    ans[playerY][playerX] = "@";
+    return ans;
+  }
   public int getPlayerX(){return playerX;}
   public int getPlayerY(){return playerY;}
+  public int getX(){return playerX;}
+  public int getY(){return playerY;}
   
 //public set methods
   public String movePlayer(String d){
@@ -92,33 +99,33 @@ public class Map {
     if (playerY >= grid.length){playerY--; ans = "YOU ARE TOO FAR OUT";}
     if (playerX < 0){playerX++; ans = "YOU ARE TOO FAR OUT";}
     if (playerY < 0){playerY++; ans = "YOU ARE TOO FAR OUT";}
+    supriseAttack();
     return ans;
   }
   
 //Random attacks and fighting
   public void supriseAttack()
   {
-	  if(attackCount <= 0);
-	  else
-	  {
-		  int randNum = (int)(Math.random() * 5);
-		  if(randNum == 1)
-		  {
-			 fight();
-			 attackCount = -3;
-		  }
-		  else;
-	  }
+   if(attackCount > 0)
+   {
+    int randNum = (int)(Math.random() * 5);
+    if(randNum == 1)
+    {
+    fight();
+    attackCount = -3;
+    }
+    else;
+   }
   }
   
   public static void fight()
   {
-	  int randNum = (int)(Math.random() * 5);
-	  if(randNum == 0){}
-	  else
-	  {
-		  Verbs.health.setNumber(Verbs.health.getNumber() - 20);
-	  }
+   int randNum = (int)(Math.random() * 5);
+   if(randNum == 0){}
+   else
+   {
+    Verbs.health.setNumber(Verbs.health.getNumber() - 20);
+   }
   }
   
 
@@ -156,5 +163,6 @@ public class Map {
     test.movePlayer("DOWN");  System.out.println(test);
     Map test2 = new Map();
     System.out.println(test2);
+    System.out.print(new Map(test.getData(),test.getX(),test.getY()));
   }
 }
