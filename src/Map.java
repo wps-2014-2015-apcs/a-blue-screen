@@ -25,7 +25,7 @@ public class Map {
   //public int[][] screen;
   private int playerX;
   private int playerY;
-  private static String[][] school = {
+  public final static String[][] school = {
     {"?","?","?","?","?"},
     {"?","?","?","?","?"},
     {"?","?","?","?","?"},
