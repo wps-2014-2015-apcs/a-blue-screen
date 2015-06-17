@@ -123,12 +123,12 @@ public class Verbs extends Resource {
  {
   if (grade.getNumber() == 100)
   {
-	System.out.println("There is progress on your code.");   
+ System.out.println("There is progress on your code.");   
   }
   else if (grade.getNumber() == 99)
   {
-	grade.setNumber(100); 
-	System.out.println("There is progress on your code."); 
+ grade.setNumber(100); 
+ System.out.println("There is progress on your code."); 
   }
   else 
   {
@@ -139,6 +139,17 @@ public class Verbs extends Resource {
  
  //If you don't have health at 100% you fail
  //If you pass, Grade +2
+ //Michael's THOUGHT//If we are doing things that make us sleepy then the 
+ //                 //harshness should be less? maybe health is accepted above
+ //                 //75% or if you can stay awake through the test with the
+ //                 //proper grade you can still make it through. because in
+ //                 //real life if you try to lose at best you can and if you
+ //                 //try to struggle often there is an opportunity to secede
+ //                 //maybe Grade +0 for hitting the min
+ //                 //      Grade +1 for getting avrage
+ //                 //      Grade -1 for fail
+ //Just a THOUGHT   //
+ 
  public void takeTest()
  {
   if (health.getNumber() == 100)
