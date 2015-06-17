@@ -3,10 +3,10 @@ WPS 2014-2015 APCS 'dark room' project. [need the google docs?](#links-to-docs)
 ##Problems
 #####No [wiki](https://github.com/wps-2014-2015-apcs/a-blue-screen/wiki) will YOU make one?
 ##Authors
-#####[Michael Moran](mailto:haelmic3@gmail.com)
-		
-		
 #####[Kristine Xu](mailto:xu.cupcake.kristine@gmail.com)
+		
+		
+#####[Michael Moran](mailto:haelmic3@gmail.com)
 		
 		
 #####[Jeremy Yu](mailto:farmeryu@gmail.com)
