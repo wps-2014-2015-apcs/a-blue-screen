@@ -19,7 +19,6 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-//To be deleted; obsolete
 public class UserInterface extends JPanel
   implements ActionListener
 {
@@ -32,7 +31,7 @@ public class UserInterface extends JPanel
       time = 0; //Timer should be used to produce pop-up events, reload resource collections
       Timer clock = new Timer(30, this); 
       clock.start();
-      story="Welcome."
+      story="Welcome.";
    }
    
    public void setStory(String s)
@@ -61,7 +60,6 @@ public class UserInterface extends JPanel
      g.drawRect (20, 20, 300, 400); 
      g.drawString("Story", 150, 40);
      g.drawString(story, 30, 55);
-  
    }
 
    public static void main(String[] a) 
