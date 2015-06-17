@@ -25,6 +25,7 @@ public class UserInterface extends JPanel
    private int time;
    //TODO: add button to change to map view, add resources w/ numbers, add buttons for verbs
    private String story;
+   Timer homeworkTimer = new Timer(10000, gameOver());
    
    public UserInterface() 
    {
@@ -60,7 +61,22 @@ public class UserInterface extends JPanel
      g.drawRect (20, 20, 300, 400); 
      g.drawString("Story", 150, 40);
      g.drawString(story, 30, 55);
+     paintButtons();
+     
    }
+   
+   public void paintButtons(){
+	   JButton homework = new JButton("Do Homework");
+	   add(homework);
+	   
+	   ActionListener hw = new ActionListener(){
+		   public void actionPerformed(ActionEvent e){
+			   homeworkTimer.restart();
+		   }
+	   };
+	   homework.addActionListener(hw);
+   }
+
 
    public static void main(String[] a) 
    {
@@ -69,6 +85,19 @@ public class UserInterface extends JPanel
      window.setBounds(0,0,1000,500);
      window.getContentPane().add(new UserInterface());
      window.setVisible(true);
+   }
+   
+   public void paintGameOver(Graphics g){
+	   setBackground(Color.red);
+   }
+   
+   public ActionListener gameOver(){
+	   ActionListener gameOver = new ActionListener(){
+		   public void actionPerformed(ActionEvent e){
+			   System.out.println("gameOver");
+		   }
+	   };
+	   return gameOver;
    }
 
 
