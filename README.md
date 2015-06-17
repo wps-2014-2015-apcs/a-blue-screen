@@ -21,18 +21,18 @@ WPS 2014-2015 APCS 'dark room' project. [need the google docs?](#links-to-docs)
 [David Petty](mailto:dpetty@winchesterps.org)
 		
 		
-#####[Billy Miller](mailto:wbrm77@gmail.com)
-		
-		
 #####[Qiuyue Liu](mailto:qiuyueliu97@gmail.com)
 		
 		
-#####[Lukas Goodman](mailto:lukasrossgoodman@gmail.com)
+#####[Lucy Dong](mailto:lucydong22@gmail.com)
 		
 		
-[Lucy Dong](mailto:lucydong22@gmail.com)
+#####[Billy Miller](mailto:wbrm77@gmail.com)
 		
-			
+		
+[Lukas Goodman](mailto:lukasrossgoodman@gmail.com)
+
+
 [Jefferson Kim](mailto:jeffersonkim97@gmail.com)
 		
 		
