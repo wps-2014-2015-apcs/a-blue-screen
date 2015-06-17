@@ -25,12 +25,19 @@ public class UserInterface extends JPanel
 {
    private int time;
    //TODO: add button to change to map view, add resources w/ numbers, add buttons for verbs
+   private String story;
    
    public UserInterface() 
    {
       time = 0; //Timer should be used to produce pop-up events, reload resource collections
       Timer clock = new Timer(30, this); 
       clock.start();
+      story="Welcome."
+   }
+   
+   public void setStory(String s)
+   {
+	   story = s;
    }
  
    public void paintComponent(Graphics g)
@@ -53,7 +60,7 @@ public class UserInterface extends JPanel
      
      g.drawRect (20, 20, 300, 400); 
      g.drawString("Story", 150, 40);
-     g.drawString("feild that contains first part of story", 30, 55);
+     g.drawString(story, 30, 55);
   
    }
 
