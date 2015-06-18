@@ -42,7 +42,7 @@ public class Verbs extends Resource {
   //Grade: +2
   //Pencils "Number": -1
      //Timer: available every 10 seconds 
- public void doHomework()
+ public static void doHomework()
  {
   String finished = "Your assignment is finished."; 
   String notEnough = "Not enough pencils.";
@@ -71,7 +71,7 @@ public class Verbs extends Resource {
  
  //Pencils: between +1 and +5
  //Timer: available every 10 seconds
- public void collectPencils()
+ public static void collectPencils()
  {
   int random = (int)(Math.random() * 5); 
   pencils.setNumber(pencils.getNumber() + random);
@@ -79,7 +79,7 @@ public class Verbs extends Resource {
  
  //Prompts text: "You are awake". 
  //Health: increases 10%
- public void drinkCoffee() 
+ public static void drinkCoffee() 
  {
   if (health.getNumber() <= 90)
   {
@@ -99,7 +99,7 @@ public class Verbs extends Resource {
  
  //Prompts text: "Health increase!"
  //Health: increases 10%
- public void playGame() 
+ public static void playGame() 
  {
   if (health.getNumber() <= 90)
   {
@@ -119,7 +119,7 @@ public class Verbs extends Resource {
  
  //Prompts text: "There is progress on your code."
  //Grade: +2
- public void writeCode()
+ public static void writeCode()
  {
   if (grade.getNumber() == 100)
   {
@@ -150,7 +150,7 @@ public class Verbs extends Resource {
  //                 //      Grade -1 for fail
  //Just a THOUGHT   //
  
- public void takeTest()
+ public static void takeTest()
  {
   if (health.getNumber() == 100)
   {
