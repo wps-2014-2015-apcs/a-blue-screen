@@ -29,7 +29,18 @@ public class MapInterface extends JPanel {
      setBackground(Color.WHITE);
      super.paintComponent(g);
      g.setColor(Color.BLUE);
-     g.drawRect(275,25,400,400);
+     g.drawRect(275,25,420,420);
+     
+     String[][] printMap = main.getData();
+     int yLoc = 40;
+     int xLoc = 280;
+     for(int r = 0; r < 21; r++) {
+    	 for(int c = 0; c < 21; c++){
+        	 g.drawString(printMap[r][c].toString(), xLoc, yLoc);
+        	 xLoc += 20;
+    	 }
+    	 xLoc = 280;
+    	 yLoc += 20;
    }
   public static void main(String[]a){
     JFrame window = new JFrame("A Blue Screen");
