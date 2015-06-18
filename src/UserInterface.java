@@ -26,13 +26,27 @@ public class UserInterface extends JPanel
    //TODO: add button to change to map view, add resources w/ numbers, add buttons for verbs
    private String story;
    Timer homeworkTimer = new Timer(10000, gameOver());
-   
+   private JButton homework = new JButton();
+	private Timer homeworkTimer = new Timer(10000, gameOver());
+	private Timer homeworkCountDownTimer = new Timer(1000, hwCountDown());
+	private int homeworkTime = 10;
+	private JButton chargeLaptop = new JButton();
+	private Timer chargeLaptopTimer = new Timer (20000, gameOver());
+	private Timer chargeLaptopCountDownTimer = new Timer(1000, chargeLaptopCountDown());
+	private int chargeLaptopTime = 20;
+	
    public UserInterface() 
    {
       time = 0; //Timer should be used to produce pop-up events, reload resource collections
       Timer clock = new Timer(30, this); 
       clock.start();
       story="Welcome.";
+		homeworkCountDownTimer.start();
+		homeworkTimer.start();
+		chargeLaptopCountDownTimer.start();
+		chargeLaptopTimer.start();
+		pencil = new Resource("pencil", 0);
+		health = new Resource("health", 50);
    }
    
    public void setStory(String s)
@@ -66,16 +80,49 @@ public class UserInterface extends JPanel
    }
    
    public void paintButtons(){
-	   JButton homework = new JButton("Do Homework");
-	   add(homework);
-	   
-	   ActionListener hw = new ActionListener(){
-		   public void actionPerformed(ActionEvent e){
-			   homeworkTimer.restart();
-		   }
-	   };
-	   homework.addActionListener(hw);
-   }
+
+		homework.setText("Do Homework" + " (" + homeworkTime + ")");
+		add(homework);
+
+		ActionListener hw = new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				homeworkTimer.restart();
+				homeworkCountDownTimer.restart();
+				homeworkTime = 10;
+				homework.repaint();
+				Verbs.doHomework();
+			}
+		};
+
+		homework.addActionListener(hw);
+		homework.addActionListener(hwCountDown());
+
+		chargeLaptop.setText("Charge the laptop (" + chargeLaptopTime + ")");
+		add(chargeLaptop);
+
+		ActionListener laptop = new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				chargeLaptopTimer.restart();
+				chargeLaptopCountDownTimer.restart();
+				chargeLaptopTime = 20;
+				chargeLaptop.repaint();
+			}
+		};
+		chargeLaptop.addActionListener(laptop);
+		chargeLaptop.addActionListener(chargeLaptopCountDown());
+	}
+
+
+	private ActionListener chargeLaptopCountDown() {
+		return new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				chargeLaptopTime--;
+			}
+		};
+
+
+	}
+
 
 
    public static void main(String[] a) 
@@ -100,6 +147,16 @@ public class UserInterface extends JPanel
 	   return gameOver;
    }
 
+   private ActionListener hwCountDown(){
+		return new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				System.out.println("1 sec");
+				homeworkTime--;
+				System.out.println(homeworkTime);
+
+			}
+		};
+	}
 
    public void actionPerformed(ActionEvent e) 
    {
