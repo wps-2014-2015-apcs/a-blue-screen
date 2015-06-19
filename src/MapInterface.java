@@ -24,29 +24,30 @@ public class MapInterface extends JPanel {
   }
   public Map getMain(){return main;}
   public Map getSchool(){return school;}
-   public void paintComponent(Graphics g)
-   {
-     setBackground(Color.WHITE);
-     super.paintComponent(g);
-     g.setColor(Color.BLUE);
-     g.drawRect(275,25,420,420);
-     
-     String[][] printMap = main.getData();
-     int yLoc = 40;
-     int xLoc = 280;
-     for(int r = 0; r < 21; r++) {
-    	 for(int c = 0; c < 21; c++){
-        	 g.drawString(printMap[r][c].toString(), xLoc, yLoc);
-        	 xLoc += 20;
-    	 }
-    	 xLoc = 280;
-    	 yLoc += 20;
-   }
+  public void paintComponent(Graphics g) {
+    setBackground(Color.WHITE);
+    super.paintComponent(g);
+    g.setColor(Color.BLUE);
+    g.drawRect(275,25,420,420);
+    String[][] printMap = main.getData();
+    int yLoc = 40;
+    int xLoc = 280;
+    for(int r = 0; r < 21; r++) {
+      for(int c = 0; c < 21; c++){
+        if(printMap[r][c].toString().equals("?"))g.setColor(Color.GRAY);
+        else g.setColor(Color.BLUE);
+        g.drawString(printMap[r][c].toString(), xLoc, yLoc);
+        xLoc += 20;
+      }
+      xLoc = 280;
+      yLoc += 20;
+    }
+  }
   public static void main(String[]a){
     JFrame window = new JFrame("A Blue Screen");
-     window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-     window.setBounds(0,0,1000,500);
-     window.getContentPane().add(new MapInterface());
-     window.setVisible(true);
+    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    window.setBounds(0,0,1000,500);
+    window.getContentPane().add(new MapInterface());
+    window.setVisible(true);
   }
 }

@@ -41,7 +41,7 @@ public class Map {
     int m = (SIZE - 1) / 2;
     playerX = m; playerY = m;
     grid = new String[SIZE][SIZE];
-    for(int r = 0; r < SIZE; r++) for(int c = 0; c < SIZE; c++) grid[r][c] = "*";
+    for(int r = 0; r < SIZE; r++) for(int c = 0; c < SIZE; c++) grid[r][c] = "?";
     grid[m][m] = "@";
     build("H", 5);// 5 Friends Houses
     build("C", 5);// 5 Coffee Shops
@@ -67,7 +67,7 @@ public class Map {
     {
     int randRow = (int)(Math.random() * SIZE);
     int randCol = (int)(Math.random() * SIZE);
-      if(grid[randRow][randCol].equals("*"))
+      if(grid[randRow][randCol].equals("?"))
         grid[randRow][randCol] = b;
       else i--;
     }
@@ -106,26 +106,23 @@ public class Map {
 //Random attacks and fighting
   public void supriseAttack()
   {
-   if(attackCount > 0)
-   {
-    int randNum = (int)(Math.random() * 5);
-    if(randNum == 1)
+    if(attackCount > 0)
     {
-    fight();
-    attackCount = -3;
+      int randNum = (int)(Math.random() * 5);
+      if(randNum == 1)
+      {
+        fight();//this should now be a event in MapIterface
+        attackCount = -3;
+      }
     }
-    else;
-   }
   }
   
   public static void fight()
   {
-   int randNum = (int)(Math.random() * 5);
-   if(randNum == 0){}
-   else
-   {
-    Verbs.health.setNumber(Verbs.health.getNumber() - 20);
-   }
+    int randNum = (int)(Math.random() * 5);
+    if(randNum == 0);//dodge
+    else
+     Verbs.health.setNumber(Verbs.health.getNumber() - 20);
   }
   
 
