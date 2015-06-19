@@ -84,7 +84,7 @@ public class Map {
   public int getPlayerY(){return playerY;}
   public int getX(){return playerX;}
   public int getY(){return playerY;}
-  
+  public String playerOn(){return grid[playerY][playerX];}
 //public set methods
   public String movePlayer(String d){
     String ans = "";
@@ -145,20 +145,20 @@ public class Map {
 //main
   public static void main(String[] args)
   {
-    Map test = new Map(school);
-    test.movePlayer("RIGHT"); System.out.println(test);
-    test.movePlayer("RIGHT"); System.out.println(test);
-    test.movePlayer("UP");    System.out.println(test);
-    test.movePlayer("RIGHT"); System.out.println(test);
-    test.movePlayer("RIGHT"); System.out.println(test);
-    test.movePlayer("UP");    System.out.println(test);
-    test.movePlayer("LEFT");  System.out.println(test);
-    test.movePlayer("LEFT");  System.out.println(test);
-    test.movePlayer("DOWN");  System.out.println(test);
-    test.movePlayer("LEFT");  System.out.println(test);
-    test.movePlayer("LEFT");  System.out.println(test);
-    test.movePlayer("DOWN");  System.out.println(test);
-    Map test2 = new Map();
+    Map test = new Map();
+    test.movePlayer("RIGHT"); System.out.println(test + test.playerOn());
+    test.movePlayer("RIGHT"); System.out.println(test + test.playerOn());
+    test.movePlayer("UP");    System.out.println(test + test.playerOn());
+    test.movePlayer("RIGHT"); System.out.println(test + test.playerOn());
+    test.movePlayer("RIGHT"); System.out.println(test + test.playerOn());
+    test.movePlayer("UP");    System.out.println(test + test.playerOn());
+    test.movePlayer("LEFT");  System.out.println(test + test.playerOn());
+    test.movePlayer("LEFT");  System.out.println(test + test.playerOn());
+    test.movePlayer("DOWN");  System.out.println(test + test.playerOn());
+    test.movePlayer("LEFT");  System.out.println(test + test.playerOn());
+    test.movePlayer("LEFT");  System.out.println(test + test.playerOn());
+    test.movePlayer("DOWN");  System.out.println(test + test.playerOn());
+    Map test2 = new Map(school);
     System.out.println(test2);
     System.out.print(new Map(test.getData(),test.getX(),test.getY()));
   }
