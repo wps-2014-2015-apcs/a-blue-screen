@@ -1,3 +1,4 @@
+
 /*\
 |*|2014 - 2015 APCS A Blue Screen project.
 |*|
@@ -25,7 +26,7 @@ implements ActionListener
 {
 	private int time;
 	//TODO: add button to change to map view, add resources w/ numbers, add buttons for verbs
-
+	private String story;
 	private JButton homework = new JButton();
 	private Timer homeworkTimer = new Timer(10000, gameOver());
 	private Timer homeworkCountDownTimer = new Timer(1000, hwCountDown());
@@ -57,6 +58,7 @@ implements ActionListener
 		chargeLaptopTimer.start();
 		collectPencilsTimer.start();
 		collectPencilsCountDownTimer.start();
+		story="Welcome";
 		/*pencil = new Verbs("pencil", 0);
 		health = new Verbs("health", 50);*/
 
@@ -82,7 +84,7 @@ implements ActionListener
 
 		g.drawRect (20, 20, 300, 400); 
 		g.drawString("Story", 150, 40);
-		g.drawString("feild that contains first part of story", 30, 55);
+		g.drawString(story, 30, 55);
 
 		//   System.out.println("paint buttons");
 		paintButtons();
